@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>thermometer</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="thermometer.js" defer></script>
+</head>
+
+<body>
+    <div class="start">
+        <header>
+            <a href="../startpage.html" class="logo"><img src='https://picsum.photos/80/80?random=1' alt='Alice的Blog' title="首頁"></a>
+            <h1>溫度換算</h1>
+        </header>
+        <div class="menu " id="menu">
+            <nav>
+                <a href="../startpage.html">首頁</a>
+                <a href="../Html/index.html" title="關於我們">關於我們</a>
+                <a href="# ">第三頁</a>
+                <a href="# ">第四頁</a>
+                <a href="# ">第五頁</a>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="col">
+                <div class="L-top">
+                    <div>
+                        <p>攝氏：</p>
+                        <div class="calculator-input">
+                            <span class="input-label" title="攝氏:">°C</span>
+                            <input type="text" id="inputC" class="input" placeholder="攝氏溫度" onChange="cto()">
+                        </div>
+                    </div>
+                    <div>
+                        <p>華氏：</p>
+                        <div class="calculator-input">
+                            <span class="input-label" title="華氏">°F</span>
+                            <input type="text" id="inputF" class="input" placeholder="華氏溫度" onChange="fto()">
+                        </div>
+                    </div>
+                    <div>
+                        <p>凱氏：</p>
+                        <div class="calculator-input">
+                            <span class="input-label" title="凱氏">K</span>
+                            <input type="text" id="inputK" class="input" placeholder="凱氏溫度" onChange="kto()">
+                        </div>
+                    </div>
+                    <div>
+                        <p>蘭金：</p>
+                        <div class="calculator-input">
+                            <span class="input-label" title="蘭金">R</span>
+                            <input type="text" id="inputR" class="input" placeholder="蘭金溫度" onChange="rto()">
+                        </div>
+                    </div>
+                </div>
+                <div class="L-down">
+                    <span class="span1">此溫度換算會計算絕對零度以上的溫度</span>
+                    <h3>絕對零度</h3>
+                    <p>攝氏 <span>-273.15 °C</span></p>
+                    <p>華氏 <span>-459.67 °F</span></p>
+                    <p>凱氏 <span>0 K</span></p>
+                    <p>蘭金 <span>0 R</span></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="R-top">
+                    <h3>溫度轉換公式</h3>
+                    <p class="p1">攝氏至華氏換算</p>
+                    <p class="p2">[℉] = [℃] x 9/5 + 32</p>
+                    <p class="p1">攝氏至凱氏換算</p>
+                    <p class="p2">[K] = [℃] + 273.15</p>
+                    <p class="p1">攝氏至蘭金換算</p>
+                    <p class="p2">[R] = ([°C] + 273.15) × 9/5</p>
+                    <p class="p1">華氏至攝氏換算</p>
+                    <p class="p2">[°C] = ([°F] - 32) x 5/9</p>
+                    <p class="p1">華氏至凱氏換算</p>
+                    <p class="p2">[K] = ([°F]+459.67) x 5/9 </p>
+                    <p class="p1">華氏至蘭金換算</p>
+                    <p class="p2">[R] = [°F] +459.67</p>
+                </div>
+                <div class="R-down">
+                    <!-- 溫度計變化圖 -->
+                    <div class="row-a">
+                        <div class="celsius">
+                            <h4 class="temp-title">攝氏</h4>
+                            <div class="img">
+                                <span class="span-L-top">100</span>
+                                <img src="../image/fahrenheit-thermometer-orange.webp" alt="攝氏溫度計" height="160">
+                                <span class="span-L-bottom">0</span>
+                            </div>
+                        </div>
+                        <div class="fahrenheit">
+                            <h4 class="temp-title">華氏</h4>
+                            <div class="img">
+                                <span class="span-R-top">100</span>
+                                <img src="../image/fahrenheit-thermometer-orange.webp" alt="華氏溫度計" height="160">
+                                <span class="span-R-bottom">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-b">
+                        <div class="kelvin">
+                            <h4 class="temp-title">凱氏</h4>
+                            <div class="img">
+                                <span class="span-L-top">100</span>
+                                <img src="../image/fahrenheit-thermometer-orange.webp" alt="凱氏溫度計" height="160">
+                                <span class="span-L-bottom">0</span>
+                            </div>
+                        </div>
+                        <div class="rankine">
+                            <h4 class="temp-title">蘭金</h4>
+                            <div class="img">
+                                <span class="span-R-top">100</span>
+                                <img src="../image/fahrenheit-thermometer-orange.webp" alt="蘭金溫度計" height="160">
+                                <span class="span-R-bottom">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix "></div>
+        </div>
+    </div>
+    <footer>
+        &copy; copyright 2020 by Alice
+    </footer>
+</body>
+
+</html>
