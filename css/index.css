@@ -188,7 +188,7 @@ footer {
     padding: 10px 0;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .wrap {
         display: block;
     }
@@ -260,7 +260,7 @@ footer {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:405px) {
     h1 {
         font-size: 50px;
     }
