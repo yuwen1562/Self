@@ -1,0 +1,113 @@
+@import url("reset.css");
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.start {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.logo {
+    display: inline-block;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    background-color: burlywood;
+    text-align: center;
+    position: relative;
+}
+
+.menu nav {
+    width: 100%;
+    font-size: 0;
+}
+
+.menu nav a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+    line-height: 52px;
+    transition: background-color .3s ease;
+}
+
+.menu nav a:hover {
+    background-color: cadetblue;
+}
+
+.sticky {
+    /*menu_bar*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+.wrap {
+    width: 960px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.pic img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.go-btn {
+    position: absolute;
+    top: 15%;
+    left: 29%;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+    transition: all 6s cubic-bezier(0.38, 0.22, 0.1, 0.99) 0s;
+}
+
+#reset_btn {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    color: #aaa;
+    padding: 10px 0;
+}

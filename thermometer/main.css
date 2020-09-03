@@ -1,0 +1,330 @@
+@import url(../css/reset.css);
+h1 {
+    font-size: 70px;
+    padding: 20px;
+    font-weight: bolder;
+    text-align: center;
+    display: inline-block;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.start {
+    flex: 1;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.logo {
+    display: inline-block;
+    padding: 15px;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+#menu_control {
+    position: absolute;
+    top: -50px;
+}
+
+.menu {
+    display: flex;
+    background-color: burlywood;
+    text-align: center;
+}
+
+.menu nav {
+    width: 100%;
+    font-size: 0;
+}
+
+.menu nav a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+    line-height: 52px;
+    transition: background-color .3s ease;
+}
+
+.menu nav a:hover {
+    background-color: cadetblue;
+}
+
+.wrap {
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    box-sizing: border-box;
+    justify-self: center;
+    margin: 20px;
+}
+
+.sticky {
+    /*menu_bar*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.L-top p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.L-down p {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h3 {
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.input {
+    grid-area: input;
+    padding: 10px 0;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 100%;
+    min-width: 10ch;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+
+span {
+    font-weight: normal;
+    padding: 10px;
+}
+
+.span1 {
+    font-size: 12px;
+}
+
+.calculator-input {
+    display: grid;
+    grid-template-columns: 1fr 45px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'input dd';
+    margin-bottom: 15px;
+}
+
+.input-label {
+    grid-area: dd;
+    padding: 12px;
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 0px 4px 4px 0px;
+    background-color: #f4f4f4;
+    border: 1px solid #cccccc;
+    text-align: center;
+    display: inline-block;
+}
+
+.p1 {
+    padding: 10px 10px 0px 10px;
+}
+
+.p2 {
+    padding: 0px 10px 10px 10px;
+    font-size: 25px;
+}
+
+
+/* .R-down {
+    border: chocolate solid 2px;
+    height: auto;
+    width: 450px;
+    text-align: center;
+    display: table-cell;
+}
+
+.row-a {
+    display: table;
+    width: 100%;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.row-b {
+    display: table;
+    width: 100%;
+    margin: 20px 0px;
+    position: relative;
+} */
+
+.celsius {
+    display: table-cell;
+    text-align: center;
+}
+
+.fahrenheit {
+    display: table-cell;
+    text-align: center;
+}
+
+.kelvin {
+    display: table-cell;
+    text-align: center;
+}
+
+.rankine {
+    display: table-cell;
+    text-align: center;
+}
+
+.temp-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.img {
+    position: relative;
+}
+
+.span-L-top {
+    text-align: right;
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.span-L-bottom {
+    text-align: right;
+    width: 70px;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+
+.span-R-top {
+    text-align: left;
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.span-R-bottom {
+    text-align: left;
+    width: 70px;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    color: #aaa;
+    padding: 10px 0;
+}
+
+@media screen and (max-width:768px) {
+    .wrap {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    #menu_control {
+        position: absolute;
+    }
+    .menu {
+        display: block;
+        padding: 5px;
+    }
+    .menu_btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        position: relative;
+        border-radius: 10px;
+        z-index: 3;
+        transition: all .5s;
+    }
+    .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .btn_bar {
+        height: 2px;
+        width: 26px;
+        position: absolute;
+        background: white;
+        margin: -1px 0 0 -13px;
+        transition: all .5s;
+    }
+    .btn_bar_top {
+        transform: translateY(-6px);
+    }
+    .btn_bar_bottom {
+        transform: translateY(6px);
+    }
+    .menu nav {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: none;
+    }
+    .menu nav a {
+        background-color: burlywood;
+        display: block;
+        border-bottom: 1px solid #000;
+        padding: 0px 20px;
+    }
+    #menu_control:checked~.menu nav {
+        display: block;
+        top: 140px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:410px) {
+    h1 {
+        font-size: 50px;
+    }
+}
