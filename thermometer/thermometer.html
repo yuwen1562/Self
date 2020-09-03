@@ -3,28 +3,37 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thermometer</title>
     <script src="./main.js"></script>
     <link rel="stylesheet" href="main.css">
-    <script src="thermometer.js" defer></script>
+    <script src="../js/menu_bar.js" defer></script>
 </head>
 
 <body>
     <div class="start">
+        <input type="checkbox" id="menu_control">
         <header>
             <a href="../startpage.html" class="logo"><img src='https://picsum.photos/80/80?random=1' alt='Alice的Blog' title="首頁"></a>
             <h1>溫度換算</h1>
         </header>
         <div class="menu " id="menu">
+            <label for="menu_control" class="menu_btn">
+                <div class="btn">
+                    <div class="btn_bar btn_bar_top"></div>
+                    <div class="btn_bar btn_bar_middle"></div>
+                    <div class="btn_bar btn_bar_bottom"></div>
+                </div>
+            </label>
             <nav>
                 <a href="../startpage.html">首頁</a>
                 <a href="../Html/index.html" title="關於我們">關於我們</a>
-                <a href="# ">第三頁</a>
+                <a href="../Html/turntable.html" title="抽獎轉盤">抽獎轉盤</a>
                 <a href="# ">第四頁</a>
                 <a href="# ">第五頁</a>
             </nav>
         </div>
-        <div class="container">
+        <div class="wrap">
             <div class="col">
                 <div class="L-top">
                     <div>
@@ -83,9 +92,44 @@
                 </div>
                 <div class="R-down">
                     <!-- 溫度計變化圖 -->
+                    <!-- <div class="row-a">
+                        <div class="celsius">
+                            <h4 class="temp-title">攝氏</h4>
+                            <div class="img">
+                                <span class="span-L-top">100</span>
+                                <img src="../image/fahrenheit-thermometer-orange.webp" alt="攝氏溫度計" height="160">
+                                <span class="span-L-bottom">0</span>
+                            </div>
+                        </div>
+                        <div class="fahrenheit">
+                            <h4 class="temp-title">華氏</h4>
+                            <div class="img">
+                                <span class="span-R-top">100</span>
+                                <img src="../image/fahrenheit-thermometer-orange.webp" alt="華氏溫度計" height="160">
+                                <span class="span-R-bottom">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-b">
+                        <div class="kelvin">
+                            <h4 class="temp-title">凱氏</h4>
+                            <div class="img">
+                                <span class="span-L-top">100</span>
+                                <img src="../image/fahrenheit-thermometer-orange.webp" alt="凱氏溫度計" height="160">
+                                <span class="span-L-bottom">0</span>
+                            </div>
+                        </div>
+                        <div class="rankine">
+                            <h4 class="temp-title">蘭金</h4>
+                            <div class="img">
+                                <span class="span-R-top">100</span>
+                                <img src="../image/fahrenheit-thermometer-orange.webp" alt="蘭金溫度計" height="160">
+                                <span class="span-R-bottom">0</span>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="clearfix "></div>
         </div>
     </div>
     <footer>

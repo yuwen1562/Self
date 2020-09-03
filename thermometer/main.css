@@ -48,6 +48,11 @@ header {
     border-radius: 50%;
 }
 
+#menu_control {
+    position: absolute;
+    top: -50px;
+}
+
 .menu {
     display: flex;
     background-color: burlywood;
@@ -73,12 +78,22 @@ header {
     background-color: cadetblue;
 }
 
-.container {
-    margin: 10px auto;
-    width: 50%;
+.wrap {
+    margin: auto;
+    width: 80%;
+    max-width: 1400px;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    box-sizing: border-box;
+    justify-self: center;
+    margin: 20px;
 }
 
 .sticky {
+    /*menu_bar*/
     position: fixed;
     width: 100%;
     top: 0;
@@ -113,13 +128,6 @@ h3 {
     min-width: 10ch;
     border-radius: 4px 0 0 4px;
     border-right: none;
-}
-
-.col {
-    float: left;
-    height: auto;
-    width: 50%;
-    box-sizing: border-box;
 }
 
 span {
@@ -160,7 +168,9 @@ span {
     font-size: 25px;
 }
 
-.R-down {
+
+/* .R-down {
+    border: chocolate solid 2px;
     height: auto;
     width: 450px;
     text-align: center;
@@ -179,7 +189,7 @@ span {
     width: 100%;
     margin: 20px 0px;
     position: relative;
-}
+} */
 
 .celsius {
     display: table-cell;
@@ -242,13 +252,79 @@ span {
     right: 0px;
 }
 
-.clearfix {
-    clear: both;
-}
-
 footer {
     background-color: #333;
     text-align: center;
     color: #aaa;
     padding: 10px 0;
+}
+
+@media screen and (max-width:768px) {
+    .wrap {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    #menu_control {
+        position: absolute;
+    }
+    .menu {
+        display: block;
+        padding: 5px;
+    }
+    .menu_btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        position: relative;
+        border-radius: 10px;
+        z-index: 3;
+        transition: all .5s;
+    }
+    .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .btn_bar {
+        height: 2px;
+        width: 26px;
+        position: absolute;
+        background: white;
+        margin: -1px 0 0 -13px;
+        transition: all .5s;
+    }
+    .btn_bar_top {
+        transform: translateY(-6px);
+    }
+    .btn_bar_bottom {
+        transform: translateY(6px);
+    }
+    .menu nav {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: none;
+    }
+    .menu nav a {
+        background-color: burlywood;
+        display: block;
+        border-bottom: 1px solid #000;
+        padding: 0px 20px;
+    }
+    #menu_control:checked~.menu nav {
+        display: block;
+        top: 140px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:410px) {
+    h1 {
+        font-size: 50px;
+    }
 }
