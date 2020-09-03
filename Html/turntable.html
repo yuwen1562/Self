@@ -47,11 +47,22 @@
         </div>
     </div>
     <button type="reset" id="reset_btn">Reset</button>
-
-    <footer>
-        &copy; copyright 2020 by Alice
+    <footer id="footer">
+        {{year}} by {{name}}
     </footer>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+    <script>
+        ;
+        (function() {
+            new Vue({
+                el: "#footer",
+                data: {
+                    name: "Alice",
+                    year: '© copyright ' + new Date().getFullYear(),
+                },
+            })
+        })()
+    </script>
 
 
 
