@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alice的Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/index.css ">
+    <link rel="stylesheet" type="text/css" href="../css/index.scss ">
     <script src="../js/menu_bar.js" defer></script>
 </head>
 
@@ -34,9 +34,9 @@
       </nav>
     </div>
 
-    <div class="wrap ">
-      <div class="self-Introduction ">
-        <img src="../image/head.jpg " alt="頭貼 " class="head-img ">
+    <div class="wrap">
+      <div class="self-Introduction">
+        <img src="../image/head.jpg" alt="頭貼" class="head-img">
         <p>您好，我是<strong>黃鈺雯</strong>我是一個對撰寫程式碼充滿熱情的工程師，擁有清晰的邏輯、使命必達的責任心及不屈不撓的精神。
         </p>
         <p><span class="font-weight-bold">【開發及維護新後台功能，提高內部人員平台工作效率】</span>原有的舊後台因更新、維護資料不易，且功能已不敷使用需求，所以公司決定從原開發商移轉回內部架站重新開發。我被分配到這個小組，負責與提出需求的部門確認需求內容、規劃介面，並進行前端的邏輯撰寫及串接API。<br>整個開發過程，著重功能傾向，以操作及流程的順暢為優先考量，盡可能替使用者減少操作所需時間，達到提升工作效率之目的。
@@ -48,33 +48,34 @@
         <p>在程式開發的領域內，還有很多的知識可以學習，期許自己成為技術能力和工具都有高度掌握的開發人員，也期待可以發揮所學。</p>
       </div>
 
-      <div class="work-experience">
-        <h2>工作經驗一</h2>
-        <p><strong class="strong">工程師</strong></p>
-        <p><strong class="strong">曾任職於<a href="https://www.zdtco.com/tw" target="_blank " title="臻鼎科技集團_先豐通訊股份有限公司" class="a2">先豐通訊股份有限公司</a></strong></p>
-        <p class="p3">
-          <ol>
-            <li>負責軟體分析、設計及程式撰寫</li>
-            <li>規劃執行軟體架構及模組之設計，並控管軟體設計進度。</li>
-            <li>進行軟體測試與修改。</li>
-            <li>規劃、執行與維護新舊軟體。</li>
-            <li>協助研發軟體新技術與新工具。</li>
-          </ol>
-        </p>
-      </div>
-      <div class="work-experience">
-        <h2>工作經驗二</h2>
-        <p><strong class="strong">前端工程師</strong></p>
-        <p><strong class="strong">任職公司<a href="https://www.zdtco.com/tw" target="_blank "class="a2">暫不公開</a></strong></p>
-        <p class="p3">
-          <ol>
-            <li>負責軟體分析、設計及程式撰寫</li>
-            <li>規劃執行軟體架構及模組之設計，並控管軟體設計進度。</li>
-            <li>進行軟體測試與修改。</li>
-            <li>規劃、執行與維護新舊軟體。</li>
-            <li>協助研發軟體新技術與新工具。</li>
-          </ol>
-        </p>
+      <div>
+        <div class="work-experience">
+          <h2>工作經驗一<span>2018/10~2020/06</span></h2>
+          <p><strong class="strong">工程師</strong></p>
+          <p><strong class="strong">曾任職於<a href="https://www.zdtco.com/tw" target="_blank " title="臻鼎科技集團_先豐通訊股份有限公司" class="a2">先豐通訊股份有限公司</a></strong></p>
+          <p class="p3">
+            <ol>
+              <li>1. 負責軟體分析、設計及程式撰寫。</li>
+              <li>2. 規劃執行軟體架構及模組之設計，並控管軟體設計進度。</li>
+              <li>3. 進行軟體測試與修改。</li>
+              <li>4. 規劃、執行與維護新舊軟體。</li>
+            </ol>
+          </p>
+        </div>
+        <div class="work-experience">
+          <h2>工作經驗二<span>2020/09~2021/12</span></h2>
+          <p><strong class="strong">前端工程師</strong></p>
+          <p><strong class="strong">任職公司<span style="color: #2A58CA;">暫不公開</span></strong></p>
+          <p class="p3">
+            <ol>
+              <li>1. 負責畫面切版。</li>
+              <li>2. 邏輯撰寫</li>
+              <li>3. 串接API</li>
+              <li>4. 進行軟體之測試與修改。</li>
+              <li>5. 新人引導。</li>
+            </ol>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -154,6 +155,7 @@
           })
       })()
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>
