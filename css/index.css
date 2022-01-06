@@ -129,6 +129,9 @@ strong {
 
 .work-experience {
   width: 30%;
+}
+
+.work-experience .work-part {
   height: auto;
   margin: 5px;
   box-sizing: border-box;
