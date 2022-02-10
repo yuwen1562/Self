@@ -100,7 +100,7 @@ strong {
 
 .wrap {
   width: 80%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: auto;
   display: flex;
 }
